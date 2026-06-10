@@ -1,29 +1,4 @@
 package com.mycompany.chatappregistration;
-
-/**
- * Registration class handles user account creation.
- * Author:Student 
- * Date: 2026
- * /**
- * Registration - This class handles the registration of a new user.
- * It validates the username, password complexity, and cell phone number.
- * It returns appropriate messages based on whether validation passes or fails.
- *
- * Regular expressions used for cell phone validation:
- * Oracle. 2024. Java SE 17 Documentation: Pattern.
- * [Online]. Available at: https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html
- * [Accessed: 13 April 2026]
- *
- * Character class used for password complexity checking:
- * Oracle. 2024. Java SE 17 Documentation: Character.
- * [Online]. Available at: https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html
- * [Accessed: 13 April 2026]
- *
- * Author: ST10498762
- * Student Number: ST10498762
- * Date: 13 April 2026
- 
- */
 @SuppressWarnings({"FieldMayBeFinal", "unused"})
 public class Registration {
 
@@ -66,8 +41,7 @@ public class Registration {
 
     public boolean checkCellPhoneNumber() {
         if (cellPhoneNumber == null) return false;
-        String regex = "^\\+27[0-9]{9}$";
-        return cellPhoneNumber.matches(regex);
+        return cellPhoneNumber.matches("^\\+27[0-9]{9}$");
     }
 
     public String registerUser() {

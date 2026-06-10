@@ -1,4 +1,4 @@
-package com.mycompany.chatappregistration;
+ package com.mycompany.chatappregistration;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
